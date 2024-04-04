@@ -93,6 +93,10 @@ body{
     font-weight: lighter;
 }
 
+.danger{
+    color: red;
+}
+
 @media screen  and (max-width:900px){
 
 
