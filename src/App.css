@@ -76,6 +76,14 @@ body{
     padding: 0 1rem;
 }
 
+
+.sel-con2{
+    margin-top: 2rem;
+    border: 1px solid black;
+    padding: 0 1rem;
+    /* width: fit-content; */
+}
+
 .p-prop-sel1{
     padding: 1rem 1rem 1rem 0;
     border: none;

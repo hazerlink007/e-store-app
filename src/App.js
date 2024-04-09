@@ -1,10 +1,11 @@
 import React from "react";
 import './App.css';
 import './Layout.css'
-import LeftPic from "./components/LeftPic";
-import RightInfo from "./components/RightInfo";
 import LImage from "./assets/mImage.png";
-import Card from "./components/Card";
+import Ip14s from './assets/iphone14s.png'
+import Iphone from './assets/iphone.png.jpeg'
+import AirPod from './assets/airpod.png'
+import PageRoutes from "./PageRoutes";
 
 const products = [
     {
@@ -69,10 +70,43 @@ const products = [
     }
 ]
 
+const popularProd =[
+    {
+        "name": "Iphone 14",
+        "sub": "Retina display",
+        "price": "1200",
+        "stock": true,
+        "tag": "phone",
+        "image": Iphone,
+        "memory": ["4GB RAM","8GB RAM","16GB RAM","32GB RAM"],
+        "color": ["Dark Grey","Gold","Ash Grey","Black"]
+    },
+    {
+        "name": "Airpods 3",
+        "sub": "Apple Atmos",
+        "price": "800",
+        "stock": true,
+        "tag": "earphone",
+        "image": AirPod,
+        "memory": [],
+        "color": ["Blue","White","Black"]
+    },
+    {
+        "name": "Iphone 14 pro",
+        "sub": "Retina display",
+        "price": "1400",
+        "stock": true,
+        "tag": "phone",
+        "image": Ip14s,
+        "memory": ["4GB RAM","8GB RAM","16GB RAM","32GB RAM"],
+        "color": ["Dark Grey","Gold","Ash Grey"]
+    }
+]
+
 const App = () =>{
     return(
 
-        <div className="container-fluid">
+        <div>
 
             {/* <div className="cont">
 
@@ -88,7 +122,7 @@ const App = () =>{
 
             </div> */}
 
-            <div className="prod-display">
+            {/* <div className="prod-display">
 
                {
                 products.length > 0 ? (
@@ -100,7 +134,10 @@ const App = () =>{
                 )
                }
                 
-            </div>
+            </div> */}
+
+            <PageRoutes data={products} pop={popularProd}/>
+
 
         </div>
 

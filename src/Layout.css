@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     flex-wrap: wrap;
 }
 
@@ -22,8 +22,9 @@
 }
 
 .img-con{
-    max-width: 400px;
-    max-height: 400px;
+    max-width:100% ;
+    height: 400px;
+    object-fit: cover;
 }
 
 .cimg{
@@ -38,3 +39,18 @@
     padding: .5rem;
 }
 
+Link{
+    text-decoration: none;
+}
+
+.aliLeft{
+    text-align: right;
+    padding: 0 1rem;
+    font-weight: 900;
+    width: 100%;
+    display: block;
+}
+
+.tSearch-con{
+    border: 1px solid #000;
+}
