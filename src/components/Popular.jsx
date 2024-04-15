@@ -4,22 +4,28 @@ import Card from "./Card";
 
 export default function Popular({products}){
     return (
-        <div className="prod-display">
-            {
-                products.length > 0 ? (
 
-                    products.map((product)=>
-                        <Card product={product} />
+        <>
+            <h2 className="ps-2">popular</h2>
+            <div className="prod-display p-0">
+
+                {
+                    products.length > 0 ? (
+
+                        products.map((product)=>
+                            <Card product={product} />
+                        )
+
+                    ):(
+                        <div>
+                            <h2>No popular products</h2>
+                        </div>
                     )
 
-                ):(
-                    <div>
-                        <h2>No popular products</h2>
-                    </div>
-                )
+                }
+                
+            </div>
 
-            }
-            
-        </div>
+        </>
     )
 }

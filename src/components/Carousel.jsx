@@ -30,7 +30,7 @@ export default function Carousel({images}){
                             images.length > 0 ? (
                                 images.map((image)=>
                 
-                                (counter) === 0 ? (
+                                (images.indexOf(image)) == 0 ? (
                                     <div className="carousel-item active">
                                     <img
                                         src={image}
